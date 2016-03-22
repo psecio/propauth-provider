@@ -61,7 +61,7 @@ they can edit!
 
 @denies('can-edit')
 they're denied being able to edit
-@denies
+@enddenies
 ```
 
 The two methods exposed are `@allows` and `@denies` with a required first parameter. You can also pass in optional parmeters if your `PropAuth` checks are more complex and use the closures handling. So, if your policy is defined like this:
@@ -85,7 +85,7 @@ You need to pass in a value/object for `$post` in the `can-delete` closure. You 
 ```
 @allows('can-delete', $post)
 Can delete this post because the username on the post is "ccornutt"
-@allows
+@endallows
 ```
 
 
